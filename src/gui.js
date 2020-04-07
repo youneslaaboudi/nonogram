@@ -181,6 +181,22 @@ const Gui = class
 					td.setAttribute( 'data-column', cell.column );
 					td.setAttribute( 'data-row', cell.row );
 					td.classList.add( 'puzzle-cell', 'flippable' );
+					// add visual help on 5x5 grid
+					if (cell.row == 0){
+						td.classList.add( 'overlined' );
+					}
+					
+					if (cell.column == 0){
+						td.classList.add( 'left-lined' );
+					}
+
+					if ((cell.row+1)%5 == 0){
+						td.classList.add( 'underlined' );
+					}
+					
+					if ((cell.column+1)%5 == 0){
+						td.classList.add( 'right-lined' );
+					}
 
 					Object.keys( cellClasses ).forEach( ( cssClass ) =>
 					{
@@ -619,6 +635,7 @@ const Gui = class
 		cells.forEach( ( cellElem ) =>
 		{
 			cellElem.classList.add( 'playable' );
+			
 
 			// highlight row/column on mouse hover
 

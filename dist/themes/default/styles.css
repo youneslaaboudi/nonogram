@@ -244,6 +244,23 @@ table.nonogram-puzzle-grid td.puzzle-cell.playable {
     cursor: pointer;
 }
 
+/* Add visual help for 5x5 grids*/
+table.nonogram-puzzle-grid td.puzzle-cell.underlined {
+    border-bottom:5px solid #000;
+}
+
+table.nonogram-puzzle-grid td.puzzle-cell.right-lined {
+    border-right:5px solid #000;
+}
+
+table.nonogram-puzzle-grid td.puzzle-cell.overlined {
+    border-top:5px solid #000;
+}
+
+table.nonogram-puzzle-grid td.puzzle-cell.left-lined {
+    border-left:5px solid #000;
+}
+
 table.nonogram-puzzle-grid .fill {
     min-width: 30px;
     min-height: 30px;
@@ -275,6 +292,12 @@ table.nonogram-puzzle-grid td.puzzle-cell .fill {}
 
 table.nonogram-puzzle-grid td.puzzle-cell.user-positive .fill {
     background: #424242;
+}
+table.nonogram-puzzle-grid td.puzzle-cell.user-red-positive .fill {
+    background: #e40d0d;
+}
+table.nonogram-puzzle-grid td.puzzle-cell.user-blue-positive .fill {
+    background: #2250d8;
 }
 
 table.nonogram-puzzle-grid td.puzzle-cell.user-negative .fill,
@@ -334,7 +357,7 @@ table.nonogram-puzzle-grid .hint.left .fill {
 table.nonogram-puzzle-grid .hint.left span {
     margin: 0 0 0 5px;
 }
-table.nonogram-puzzle-grid td.row-column-highlight:not(.user-positive):not(.solution-positive) .fill {
+table.nonogram-puzzle-grid td.row-column-highlight:not(.user-positive):not(.user-blue-positive)::not(.user-red-positive):not(.solution-positive) .fill {
     background-color: #ddeef7;
 }
 
