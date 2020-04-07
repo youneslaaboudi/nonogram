@@ -656,7 +656,8 @@ const Gui = class
 				} );
 			} );
 
-			// add cell click event handler
+			/*
+			// add cell click event handler -> commented out to be handled manually with commands from multiplayer
 
 			cellElem.addEventListener( 'click', ( e ) =>
 			{
@@ -688,9 +689,9 @@ const Gui = class
 				} else {
 					solvedP.textContent = '';
 				}
-			} );
+			} );*/
 		} );
-
+		
 		// remove highlighted cells on puzzle grid mouseout
 
 		table.addEventListener( 'mouseleave', () =>
