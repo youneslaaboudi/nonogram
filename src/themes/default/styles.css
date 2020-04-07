@@ -357,7 +357,7 @@ table.nonogram-puzzle-grid .hint.left .fill {
 table.nonogram-puzzle-grid .hint.left span {
     margin: 0 0 0 5px;
 }
-table.nonogram-puzzle-grid td.row-column-highlight:not(.user-positive):not(.user-blue-positive)::not(.user-red-positive):not(.solution-positive) .fill {
+table.nonogram-puzzle-grid td.row-column-highlight:not(.user-positive):not(.user-blue-positive):not(.user-red-positive):not(.solution-positive) .fill {
     background-color: #ddeef7;
 }
 
